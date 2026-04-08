@@ -1,0 +1,16 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-banner{
+    background-image: url("assets/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+
+}
