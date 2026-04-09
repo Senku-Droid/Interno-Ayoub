@@ -1,11 +1,53 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*fonts*/
+
+.display{
+    font-family: "DM Serif Display", serif;
+}
+
+.jost{
+    font-family: "Jost", sans-serif;
+}
+
+.container{
+    max-width: 1200px; /*largeur maximale de 1200px*/
+    width: 100%; /*largeur à 100%*/
+    margin-left: auto; /*centrer le conteneur*/
+    margin-right: auto; /*centrer le conteneur*/
+}
+
+/*Decoration*/
+
+.deco-none {
+    text-decoration: none; /*pas de soulignement*/
+}
+
+.list-none {
+    list-style: none; /*pas de puces*/
+}
+
+/*Colors*/
+
+.p2 {
+    color: #292F36; /*texte en noir*/
+}
+
+.p3 {
+    color: #4D5053; /*texte en noir*/
+}
+
+.white {
+    color: white; /*texte en blanc*/
+}
+
+/*Banner*/
 
 .section-banner{
     background-image: url("assets/banner.jpg");
@@ -14,3 +56,30 @@
     height: 800px;
 
 }
+
+/*Flexbox*/
+
+.flex {
+    display: flex; /*affichage en flexbox*/
+    flex-wrap: wrap; /*permet de faire un retour à la ligne si les éléments ne rentrent pas sur une ligne*/
+}
+
+.space-between {
+    justify-content: space-between; /*espacement entre les éléments*/
+}
+
+.align-center {
+    align-items: center; /*centrer les éléments verticalement*/
+}
+
+.gap-16 {
+    gap: 16px; /*espacement de 16px entre les éléments*/
+}
+
+/*Marging and Padding*/
+
+
+
+
+
+
