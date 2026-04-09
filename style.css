@@ -1,85 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+/* =========================
+   1) RESET GLOBAL
+   ========================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*fonts*/
+/* =========================
+   2) TYPOGRAPHIE DE BASE
+   ========================= */
 
-.display{
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 85px;
+    margin-bottom: 16px;
+}
+
+/* =========================
+   3) COMPOSANTS UI
+   ========================= */
+
+.btn {
+  background-color: #292F36;
+  color: white;
+  padding: 26px 48px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #2d2d4a;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  color: #CDA274;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* =========================
+   4) UTILITAIRES TYPO
+   ========================= */
+
+.display {
     font-family: "DM Serif Display", serif;
 }
 
-.jost{
+.jost {
     font-family: "Jost", sans-serif;
 }
 
-.container{
-    max-width: 1200px; /*largeur maximale de 1200px*/
-    width: 100%; /*largeur à 100%*/
-    margin-left: auto; /*centrer le conteneur*/
-    margin-right: auto; /*centrer le conteneur*/
+.f-16 {
+    font-size: 16px; /* Taille de police 16px */
 }
 
-/*Decoration*/
+/* =========================
+   5) STRUCTURE / LAYOUT
+   ========================= */
+
+.container {
+    max-width: 1200px; /* Largeur maximale 1200px */
+    width: 100%; /* Largeur a 100% */
+    margin-left: auto; /* Centrage horizontal */
+    margin-right: auto; /* Centrage horizontal */
+}
+
+/* =========================
+   6) UTILITAIRES DE DECORATION
+   ========================= */
 
 .deco-none {
-    text-decoration: none; /*pas de soulignement*/
+    text-decoration: none; /* Pas de soulignement */
 }
 
 .list-none {
-    list-style: none; /*pas de puces*/
+    list-style: none; /* Pas de puces */
 }
 
-/*Colors*/
+/* =========================
+   7) UTILITAIRES DE COULEUR
+   ========================= */
 
 .p2 {
-    color: #292F36; /*texte en noir*/
+    color: #292F36; /* Texte fonce */
 }
 
 .p3 {
-    color: #4D5053; /*texte en noir*/
+    color: #4D5053; /* Texte gris fonce */
 }
 
 .white {
-    color: white; /*texte en blanc*/
+    color: white; /* Texte en blanc */
 }
 
-/*Banner*/
+/* =========================
+   8) SECTIONS SPECIFIQUES
+   ========================= */
 
-.section-banner{
+.section-banner {
     background-image: url("assets/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
-
+    border-bottom-left-radius: 200px 200px;
 }
 
-/*Flexbox*/
+/* =========================
+   9) UTILITAIRES FLEXBOX
+   ========================= */
 
 .flex {
-    display: flex; /*affichage en flexbox*/
-    flex-wrap: wrap; /*permet de faire un retour à la ligne si les éléments ne rentrent pas sur une ligne*/
+    display: flex; /* Affichage en flexbox */
+    flex-wrap: wrap; /* Retour a la ligne si necessaire */
+}
+
+.flex-column {
+    flex-direction: column; /* Affichage en colonne */
+}
+
+.justify-center {
+    justify-content: center; /* Centrage horizontal */
 }
 
 .space-between {
-    justify-content: space-between; /*espacement entre les éléments*/
+    justify-content: space-between; /* Espacement entre les elements */
 }
 
 .align-center {
-    align-items: center; /*centrer les éléments verticalement*/
+    align-items: center; /* Centrage vertical */
+}
+
+.align-content-center {
+    align-content: center; /* Centrage sur plusieurs lignes */
 }
 
 .gap-16 {
-    gap: 16px; /*espacement de 16px entre les éléments*/
+    gap: 16px; /* Espacement de 16px */
 }
 
-/*Marging and Padding*/
+/* =========================
+   10) ESPACEMENTS & DIMENSIONS
+   ========================= */
 
+.p-80 {
+    padding: 80px; /* Padding de 80px */
+}
 
+.m-25 {
+    margin-bottom: 25px; /* Marge basse de 25px */
+}
 
+.gap-32 {
+    gap: 32px; /* Espacement de 32px */
+}
 
+.w-30 {
+    width: 30%; /* Largeur a 30% */
+}
 
+.w-50 {
+    width: 50%; /* Largeur a 50% */
+}
+
+.border-radius-10 {
+    border-radius: 30px; /* Bordure arrondie de 30px */
+}
+
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portee legere */
+}
+
+.w-10{
+    width: 5%; /*largeur à 10%*/
+}
 
